@@ -251,7 +251,7 @@ export default function InsightsPage() {
 
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem', border: '1px solid #e0e0e0', borderRadius: '6px', backgroundColor: '#f8f9fa' }}>
               <div>
-                <h4 style={{ margin: '0 0 0.25rem 0', color: '#333' }}>Server response time  500ms</h4>
+                <h4 style={{ margin: '0 0 0.25rem 0', color: '#333' }}>Server response time &gt; 500ms</h4>
                 <span style={{ fontSize: '0.8rem', color: '#666' }}>Notify: PagerDuty + SMS to on-call engineer</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>

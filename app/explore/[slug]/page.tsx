@@ -4,13 +4,14 @@ import { notFound } from "next/navigation";
 import { getExploreItem } from "@/lib/explore";
 
 interface ExplorePageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-export default function ExplorePage({ params }: ExplorePageProps) {
-  const item = getExploreItem(params.slug);
+export default async function ExplorePage({ params }: ExplorePageProps) {
+  const { slug } = await params;
+  const item = getExploreItem(slug);
 
   if (!item) {
     return notFound();
