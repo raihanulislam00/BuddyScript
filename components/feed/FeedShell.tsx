@@ -362,7 +362,7 @@ export function FeedShell({ user }: FeedShellProps) {
                   aria-label={control.label}
                   onClick={() => {
                     if (control.panel) {
-                      setActivePanel((current) => (current === control.panel ? null : control.panel));
+                      setActivePanel((current) => current === control.panel ? null : control.panel!);
                       return;
                     }
                     if (control.href) {
