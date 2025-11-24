@@ -1,0 +1,11 @@
+# Vercel ignore file
+.env*
+.git
+.gitignore
+README.md
+.next
+node_modules
+npm-debug.log
+.nyc_output
+.DS_Store
+*.tsbuildinfo
